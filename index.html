@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -20,90 +22,99 @@
 
   <main>
 
-    <section class="pratos">
+    <section id="prato" class="pratos">
       <div>
         <h2>Primeiro, seu prato</h2>
       </div>
 
       <div class="cards">
-        <div class="fundo green-border">
+        <div data-test="dish" class="fundo green-border" onclick="getPrato(this)" >
           <img src="./assets/img/burguer.jpg" alt="imagem de um hamburguer">
-          <h4>Hamburguer</h4>
+          <h4 data-test="item-name">Hamburguer</h4>
           <p class="info">carne, bacon, queijo, salada e molho</p>
-          <p class="preco">R$ 25,00</p>
+          <p data-test="item-price" class="preco">R$ 25,00</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
-        <div class="fundo green-border">
+        <div data-test="dish" class="fundo green-border" onclick="getPrato(this)">
           <img src="./assets/img/carnegrelhada.jpg" alt="imagem de um prato com carne grelhada e legumes">
-          <h4>Carne grelhada</h4>
+          <h4 data-test="item-name">Carne grelhada</h4>
           <p class="info">Carne grelhada com legumes salteados </p>
-          <p class="preco">R$ 40,00</p>
+          <p data-test="item-price" class="preco">R$ 40,00</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
-        <div class="fundo green-border">
+        <div data-test="dish" class="fundo green-border" onclick="getPrato(this)" >
           <img src="./assets/img/pexels-vladimír-sládek-10165859.jpg" alt="imagem de um prato com macarrão">
-          <h4>Massa</h4>
+          <h4 data-test="item-name">Massa</h4>
           <p class="info">Fettuccine com molho e frango </p>
-          <p class="preco">R$ 30,00</p>
+          <p data-test="item-price" class="preco">R$ 30,00</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
       </div>
     </section>
 
 
-    <section class="bebidas">
+    <section id="bebida" class="bebidas">
       <div>
         <h2>Agora, sua bebida</h2>
       </div>
 
       <div class="cards">
-        <div class="fundo green-border">
+        <div data-test="drink" class="fundo green-border" onclick="getBebida(this)" >
           <img src="./assets/img/coca.jpg" alt="imagem da bebida coca-cola">
-          <h4>Coca-Cola</h4>
+          <h4 data-test="item-name">Coca-Cola</h4>
           <p class="info">Cola-Cola gelada lata 350 ml </p>
-          <p class="preco">R$ 4,90</p>
+          <p data-test="item-price" class="preco">R$ 4,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
-        <div class="fundo green-border">
+        <div data-test="drink" class="fundo green-border" onclick="getBebida(this)" >
           <img src="./assets/img/sucos.jpg" alt="imagem de garrafas de suco natural">
-          <h4>Sucos Naturais</h4>
-          <p class="info">Laranja, cenoura e frutas vermelhase  </p>
-          <p class="preco">R$ 7,00</p>
+          <h4 data-test="item-name">Sucos Naturais</h4>
+          <p class="info">Laranja, cenoura e frutas vermelhase </p>
+          <p data-test="item-price" class="preco">R$ 7,00</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
-        <div class="fundo green-border">
+        <div data-test="drink" class="fundo green-border" onclick="getBebida(this)" >
           <img src="./assets/img/cerveja.jpg" alt="imagem de uma garrafa de cerveja">
-          <h4>Cerveja Artesanal </h4>
+          <h4 data-test="item-name">Cerveja Artesanal </h4>
           <p class="info">Cerveja clara pilsen 600 ml</p>
-          <p class="preco">R$ 15,90</p>
+          <p data-test="item-price" class="preco">R$ 15,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
       </div>
     </section>
 
-    <section class="sobremesas">
+    <section id="sobremesa" class="sobremesas">
       <div>
         <h2> Por fim, sua sobremesa</h2>
       </div>
 
       <div class="cards">
-        <div class="fundo green-border">
+        <div data-test="dessert" class="fundo green-border" onclick="getSobremesa(this)" >
           <img src="./assets/img/milfolhas.jpg" alt="imagem de uma sobremesa de massa folhada recheada">
-          <h4>Mil folhas</h4>
+          <h4 data-test="item-name">Mil folhas</h4>
           <p class="info">Massa folhada com recheio e crocantes</p>
-          <p class="preco">R$ 9,00</p>
+          <p data-test="item-price" class="preco">R$ 9,00</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
-        <div class="fundo green-border">
+        <div data-test="dessert" class="fundo green-border" onclick="getSobremesa(this)">
           <img src="./assets/img/bolo.jpg" alt="imagem de bolo chocolate com frutas vermelhas">
-          <h4>Floresta negra</h4>
+          <h4 data-test="item-name">Floresta negra</h4>
           <p class="info">Bolo de chocolate com frutas vermelhas </p>
-          <p class="preco">R$ 9,00</p>
+          <p data-test="item-price" class="preco">R$ 9,00</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
 
-        <div class="fundo green-border">
+        <div data-test="dessert" class="fundo green-border" onclick="getSobremesa(this)">
           <img src="./assets/img/browne.jpg" alt="imagem de um brownie com gotas de chocolate e framboesa">
-          <h4>Brownie</h4>
+          <h4 data-test="item-name">Brownie</h4>
           <p class="info">Gotas de chocolate e framboesa</p>
-          <p class="preco">R$ 7,90</p>
+          <p data-test="item-price" class="preco">R$ 7,90</p>
+          <ion-icon name="checkmark-circle"></ion-icon>
         </div>
       </div>
     </section>
@@ -111,7 +122,9 @@
   </main>
 
   <footer>
-    <button> <p class="msg-footer"> Selecione os 3 itens para fechar o pedido </p> </button>
+    <button data-test="order-btn">
+      <p class="msg-footer"> Selecione os 3 itens para fechar o pedido </p>
+    </button>
   </footer>
 
 
