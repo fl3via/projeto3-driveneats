@@ -159,3 +159,11 @@ button {
 .green-border ion-icon {
 display: initial;
 }
+
+.botao-enviar {
+  background-color: #32b72f;
+}
+
+.fechar-pedido{
+  font-weight: 700;
+}
