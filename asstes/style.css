@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 414px;
+  background-color: #E5E5E5;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+/* ========= header ============= */
+
+header {
+  background-color: #CF2B2B;
+  position: fixed;
+  top: 0;
+  width: 414px;
+  height: 92px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 44px;
+  margin-top: 4px;
+  margin-left: 25px;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-left: 25px;
+  margin-bottom: 18px;
+  margin-top: 5px;
+}
+
+/* ========== primeiros pratos ============ */
+
+.pratos {
+  margin-top: 123px;
+}
+
+h2 {
+  font-family: 'Righteous';
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.018em;
+  margin-left: 19px;
+  font-style: normal;
+}
+
+.menu {
+  margin-bottom: 27px;
+  display: flex;
+  margin-top: 17px;
+  margin-left: 19px;
+  gap: 16px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    background-color: #afa7a7;
+    width: 1px;
+    height: 3px;
+}
+
+.cards {
+  width: 172px;
+  height: 216px;
+  border-radius: 9px;
+  background: #FFFFFF;
+  padding-left: 14px;
+  padding-right: 14px;
+  position: relative;
+  margin-top: 18px;
+}
+
+.segurando {
+  width: 144px;
+  height: 200px;
+  margin-top: 18px;
+}
+
+img {
+  width: 144px;
+  height: 87px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.descri {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: #A6A6A6;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+ion-icon {
+  position: absolute;
+  bottom: 14px;
+  right: 11px;
+  color: #32b72f;
+  font-size: 19px;
+  display: none;
+}
+
+/* ============== sobremesas =================== */
+
+.sobremesas {
+  margin-bottom: 108px;
+}
+
+/* =========== footer =============== */
+
+footer {
+  height: 92px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  width: 414px;
+}
+
+button {
+  background-color: #CBCBCB;
+  border-radius: 50px;
+  color: #FFFFFF;
+  width: 364px;
+  height: 61px;
+  border: none;
+}
+
+.msg-footer {
+  max-width: 200px;
+  margin: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.018em;
+  color: #ffff;
+}
+
+/* =================== css adicionado junto ao javaScript ============ */
+
+.green-border {
+  box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 25%), inset 0px 0px 0px 5px #32b72f;
+}
+
+.green-border ion-icon {
+  display: initial;
+}
+
+.botao-enviar {
+  background-color: #32b72f;
+}
+
+.fechar-pedido {
+  font-weight: 700;
+}
