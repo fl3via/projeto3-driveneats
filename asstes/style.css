@@ -69,13 +69,16 @@ h2 {
   overflow-y: hidden;
 }
 
+/* ============= estilisa scroll ============= */
+
 ::-webkit-scrollbar {
     background-color: #afa7a7;
-    width: 1px;
-    height: 3px;
+    height: 5px;
 }
 
-.cards {
+/* ========================================== */
+
+.cards-pratos, .cards-drink, .cards-dessert {
   width: 172px;
   height: 216px;
   border-radius: 9px;
@@ -162,7 +165,7 @@ button {
   border: none;
 }
 
-.msg-footer {
+.msg-button {
   max-width: 200px;
   margin: auto;
   font-weight: 400;
@@ -183,10 +186,14 @@ button {
   display: initial;
 }
 
-.botao-enviar {
+.botao-enviar-pedidos {
   background-color: #32b72f;
 }
 
-.fechar-pedido {
+.finalizar-pedido {
   font-weight: 700;
+}
+
+.botao-habilitado {
+  background-color: #32b72f;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <title>DrivenEats</title>
     <link rel="stylesheet" href="./asstes/reset.css">
     <link rel="stylesheet" href="./asstes/style.css">
-    <script src="./asstes/script.js"></script>
+    <script src="./asstes/script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -19,37 +19,37 @@
         <h3>Sua comida em 6 minutos</h3>
     </header>
     <main>
-        <section id="prato" class="pratos">
+        <section id="prato" class="pratos" >
             <h2>Primeiro, seu prato</h2>
             <div class="menu">
-                <div data-test="dish" class="cards" onclick="getPrato(this)">
-                    <div class="segurando">
+                <div data-test="dish" class="cards-pratos" class="selected" >
+                    <div class="segurando" >
                         <img src="./asstes/images/frango_yin_yang.png" alt="">
                         <h4 data-test="item-name">Hamburguer</h4>
                         <p class="descri">carne, bacon, queijo, salada e molho</p>
                         <p data-test="item-price" class="price">R$ 25,00</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
 
-                <div data-test="dish" class="cards" onclick="getPrato(this)">
+                <div data-test="dish" class="cards-pratos"  class="selected" >
                     <div class="segurando">
                         <img src="./asstes/images/frango_yin_yang.png"
                             alt="imagem de um prato com carne grelhada e legumes">
                         <h4 data-test="item-name">Carne grelhada</h4>
                         <p class="descri">Carne grelhada com legumes salteados </p>
                         <p data-test="item-price" class="price">R$ 40,00</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
 
-                <div data-test="dish" class="cards" onclick="getPrato(this)">
+                <div data-test="dish" class="cards-pratos"  class="selected" >
                     <div class="segurando">
                         <img src="./asstes/images/frango_yin_yang.png" alt="imagem de um prato com macarrão">
                         <h4 data-test="item-name">Massa</h4>
                         <p class="descri">Fettuccine com molho e frango </p>
                         <p data-test="item-price" class="price">R$ 30,00</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -60,33 +60,33 @@
                 <h2>Agora, sua bebida</h2>
             </div>
             <div class="menu">
-                <div data-test="drink" class="cards" onclick="getBebida(this)">
+                <div data-test="drink" class="cards-drink"  class="selected" >
                     <div class="segurando">
                         <img src="./asstes/images/coca-cola.png" alt="imagem da bebida coca-cola">
                         <h4 data-test="item-name">Coca-Cola</h4>
                         <p class="descri">Cola-Cola gelada lata 350 ml </p>
                         <p data-test="item-price" class="price">R$ 4,90</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
 
-                <div data-test="drink" class="cards" onclick="getBebida(this)">
+                <div data-test="drink" class="cards-drink"  class="selected" >
                     <div class="segurando">
                         <img src="./asstes/images/coca-cola.png" alt="">
                         <h4 data-test="item-name">Sucos Naturais</h4>
-                        <p class="descri">Laranja, cenoura e frutas vermelhase </p>
+                        <p class="descri">Laranja, cenoura e frutas vermelhas </p>
                         <p data-test="item-price" class="price">R$ 7,00</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
 
-                <div data-test="drink" class="cards" onclick="getBebida(this)">
+                <div data-test="drink" class="cards-drink"  class="selected" >
                     <div class="segurando">
                         <img src="./asstes/images/coca-cola.png" alt="">
                         <h4 data-test="item-name">Cerveja Artesanal </h4>
                         <p class="descri">Cerveja clara pilsen 600 ml</p>
                         <p data-test="item-price" class="price">R$ 15,90</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -98,42 +98,42 @@
             </div>
 
             <div class="menu">
-                <div data-test="dessert" class="cards" onclick="getSobremesa(this)">
+                <div data-test="dessert" class="cards-dessert"  class="selected">
                     <div class="segurando">
                         <img src="./asstes/images/pudim.png" alt="imagem de uma sobremesa de massa folhada recheada">
                         <h4 data-test="item-name">Mil folhas</h4>
                         <p class="descri">Massa folhada com recheio e crocantes</p>
                         <p data-test="item-price" class="price">R$ 9,00</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
 
-                <div data-test="dessert" class="cards" onclick="getSobremesa(this)">
+                <div data-test="dessert" class="cards-dessert" class="selected">
                     <div class="segurando">
                         <img src="./asstes/images/pudim.png" alt="imagem de bolo chocolate com frutas vermelhas">
                         <h4 data-test="item-name">Floresta negra</h4>
                         <p class="descri">Bolo de chocolate com frutas vermelhas </p>
                         <p data-test="item-price" class="price">R$ 8,00</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
 
-                <div data-test="dessert" class="cards" onclick="getSobremesa(this)">
+                <div data-test="dessert" class="cards-dessert" class="selected" >
                     <div class="segurando">
                         <img src="./asstes/images/pudim.png"
                             alt="imagem de um brownie com gotas de chocolate e framboesa">
                         <h4 data-test="item-name">Brownie</h4>
                         <p class="descri">Gotas de chocolate e framboesa</p>
                         <p data-test="item-price" class="price">R$ 7,90</p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="icon"></ion-icon>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <button type="button" data-test="order-btn" disabled onclick="enviarPedido()">
-            <p class="msg-footer"> Selecione os 3 itens para fechar o pedido </p>
+        <button type="button" data-test="order-btn" disabled onclick="enviarPedidos()" id="finalizar-pedido" class="f">
+            <p class="msg-button"> Selecione os 3 itens para fechar o pedido </p>
         </button>
     </footer>
 </body>
