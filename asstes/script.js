@@ -105,6 +105,12 @@ function habilitarBotao() {
   }
 }
 
+//Envia pedido pelo whatsApp
+const options = {
+  style: 'currency',
+  currency: 'BRL'
+};
+
 const enviarPedido = document.getElementById('finalizar-pedido');
 enviarPedido.addEventListener('click', function() {
   const numeroTelefone = '5524981593428';
@@ -113,10 +119,10 @@ enviarPedido.addEventListener('click', function() {
   const precoDessert = dessertSelecionado.getAttribute('data-preco');
   const total = parseFloat(precoPrato) + parseFloat(precoDrink) + parseFloat(precoDessert);
   const mensagem = `Olá, gostaria de fazer o pedido:
-  - Prato: ${cardPratoSelecionado.getAttribute('data-nome')} (R$${precoPrato})
-  - Bebida: ${drinkSelecionado.getAttribute('data-nome')} (R$${precoDrink})
-  - Sobremesa: ${dessertSelecionado.getAttribute('data-nome')} (R$${precoDessert})
-  Total: R$${total.toFixed(2)}`;
+  - Prato: ${cardPratoSelecionado.getAttribute('data-nome')} R$${precoPrato}
+  - Bebida: ${drinkSelecionado.getAttribute('data-nome')} R$${precoDrink}
+  - Sobremesa: ${dessertSelecionado.getAttribute('data-nome')} R$${precoDessert}
+  Total: R$${total.toLocaleString('pt-BR', options)}`;
 
   const link = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
   window.open(link, '_blank');
