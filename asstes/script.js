@@ -105,3 +105,22 @@ function habilitarBotao() {
   }
 }
 
+const enviarPedido = document.getElementById('finalizar-pedido');
+enviarPedido.addEventListener('click', function() {
+  const numeroTelefone = '5524981593428';
+  const precoPrato = cardPratoSelecionado.getAttribute('data-preco');
+  const precoDrink = drinkSelecionado.getAttribute('data-preco');
+  const precoDessert = dessertSelecionado.getAttribute('data-preco');
+  const total = parseFloat(precoPrato) + parseFloat(precoDrink) + parseFloat(precoDessert);
+  const mensagem = `Olá, gostaria de fazer o pedido:
+  - Prato: ${cardPratoSelecionado.getAttribute('data-nome')} (R$${precoPrato})
+  - Bebida: ${drinkSelecionado.getAttribute('data-nome')} (R$${precoDrink})
+  - Sobremesa: ${dessertSelecionado.getAttribute('data-nome')} (R$${precoDessert})
+  Total: R$${total.toFixed(2)}`;
+
+  const link = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
+  window.open(link, '_blank');
+});
+
+
+
