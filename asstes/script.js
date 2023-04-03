@@ -26,6 +26,7 @@ prato.forEach(function (div) {
     if (icon) {
       icon.style.display = 'block';
     }
+    habilitarBotao()
   });
 });
 
@@ -52,6 +53,7 @@ drink.forEach(function (div) {
     if (icon) {
       icon.style.display = 'block';
     }
+    habilitarBotao()
   });
 });
 
@@ -78,7 +80,28 @@ dessert.forEach(function (div) {
     if (icon) {
       icon.style.display = 'block';
     }
+    habilitarBotao()
   });
 });
 
+// Seleciona botão
+const botaoPedido = document.getElementById('finalizar-pedido');
+// Função para habilitar o botão
+function habilitarBotao() {
+  if (cardPratoSelecionado && drinkSelecionado && dessertSelecionado) {
+    botaoPedido.disabled = false;
+    // Altera a cor do botão
+    botaoPedido.classList.remove('enviar-pedido');
+    botaoPedido.classList.add('habilitado');
+    botaoPedido.style.background = ' #32b72f'
+    botaoPedido.querySelector('.msg-button').textContent = 'Fechar pedido';
+  } else {
+    // Desabilitar o botão
+    botaoPedido.disabled = true;
+    // Alterar o texto 
+    botaoPedido.classList.remove('habilitado');
+    botaoPedido.classList.add('enviar-pedido');
+    botaoPedido.querySelector('.msg-button').textContent = 'Selecione os 3 itens para fechar o pedido';
+  }
+}
 
