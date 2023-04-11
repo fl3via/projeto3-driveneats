@@ -1,6 +1,6 @@
-DrivenEats
 
-![Imagem 1](./assets/images/layout.png "Imagem 1")
+
+![Imagem 1](./assets/images/layout.jpeg "Imagem 1")
 
 <h1 align="center">DrivenEats</h1>
 
