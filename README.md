@@ -1,6 +1,6 @@
 
 
-![Imagem 1](./assets/images/layout.jpeg "Imagem 1")
+<img src="./assets/images/layout.jpeg">
 
 <h1 align="center">DrivenEats</h1>
 
