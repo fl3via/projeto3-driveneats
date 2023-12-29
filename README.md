@@ -17,3 +17,14 @@ O restaurante recebe uma mensagem contendo o nome do prato pedido, a bebida esco
 - JavaScript;
 - HTML5;
 - CSS3.
+
+### **Como Executar o Projeto Localmente**
+
+### No Terminal 
+1. **Clone o Repositório:** `git clone` https://github.com/fl3via/projeto3-driveneats
+2. **Entre na pasta:** `cd` projeto3-driveneats
+3. **Abra no Visual Estudio Code:** `code .`
+
+### No Visual Estudio Code
+4. Clique com o botão direito do mouse em `index.html`
+5. Clique em `Open with Live Server [Alt+LAlt+O]`
